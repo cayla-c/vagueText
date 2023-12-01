@@ -1,0 +1,11 @@
+{
+  "name": "VagueText",
+  "description": "Simple extension to generate names, phrases, or titles for folks who are too tired to think of anything interesting, and bored of using 'asdf' for everyhing.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["clipboardWrite"],
+  "action": {
+    "default_popup": "vague.html",
+    "default_icon": "vaguetext.png"
+  }
+}

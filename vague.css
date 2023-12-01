@@ -1,0 +1,13 @@
+h1 {
+  color: rgb(2, 71, 140);
+  font-family: helvetica;
+  font-size: 15px;
+}
+button {
+  border: solid;
+  border-color: dodgerblue;
+  border-width: 4px;
+  border-radius:10px;
+  background-color:whitesmoke;
+  font-family: "Lucida Console";
+}
