@@ -3,11 +3,21 @@ h1 {
   font-family: helvetica;
   font-size: 15px;
 }
+
 button {
-  border: solid;
+  width: 100%;
   border-color: dodgerblue;
   border-width: 4px;
-  border-radius:10px;
+  border-radius:8px;
   background-color:whitesmoke;
-  font-family: "Lucida Console";
+  font-family: "helvetica";
+  cursor: pointer;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.button:active {
+  background-color:gray;
+  box-shadow: 0 2px #666;
+  transform: translateY(3px);
 }
