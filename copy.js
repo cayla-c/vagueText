@@ -1,6 +1,6 @@
 // It needs to wait until the thing loads, find the thing, add a click, and copy to clipboard onclick.
 
-// NONE OF THESE WORK:
+// NONE OF THESE WORK; I tried them in this order:
 // #1: 
 // document.getElementById('btn').addEventListener('click', copyVague()); getElement returns null.
 // #2:
