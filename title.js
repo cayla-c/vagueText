@@ -69,9 +69,11 @@ let third = [
   "Through a Critical Lens"
 ]
 
-
-function generator() {
-  return first[Math.floor(Math.random() * 25)] + " " + second[Math.floor(Math.random() * 25)] + " " + third[Math.floor(Math.random() * 12)];
+function titleGenerator() {
+  return first[Math.floor(Math.random() * first.length)] + " " + second[Math.floor(Math.random() * second.length)] + " " + third[Math.floor(Math.random() * third.length)];
 }
 
-document.getElementById("phrase").innerHTML = generator();
+document.getElementById("paperTitle").addEventListener("click", () => {
+  const text = titleGenerator();
+  navigator.clipboard.writeText(text);
+});
