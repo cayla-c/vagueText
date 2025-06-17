@@ -5,19 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vague.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">      
   </head>
   <body>
-    <h2 id="options">What do you want?</h2>
+    <h2 id="options" class="shiny">
+      <div>
+        <span>What do you need?</span>
+      </div>
+    </h2>
+    <h4 id="pride">(Pride edition)</h4>
     <h3 id="instructions">Click to copy:</h3>
-    <button id="genericName">Boring first/last</button>
-      <script src="genericName.js"></script>
-    <button id="paperTitle">Stupid paper title</button>
-      <script src="paperTitle.js"></script>
-    <button id="bandName">Band name</button>
-      <script src="bandName.js"></script>
-    <button id="lousyJob">Lousy job descriptor</button>
-      <script src="lousyJob.js"></script>
-    <button id="weirdChars">I just need some weird characters</button>
-      <script src="weirdChars.js"></script>
+    <div id="buttonBox">
+      <button id="genericName">Boring first & last name</button>
+        <script src="genericName.js"></script>
+      <button id="paperTitle">Stupid paper title</button>
+        <script src="paperTitle.js"></script>
+      <button id="bandName">Silly band name</button>
+        <script src="bandName.js"></script>
+      <button id="lousyJob">Lousy job description</button>
+        <script src="lousyJob.js"></script>
+      <button id="weirdChars">I just need some weird characters</button>
+        <script src="weirdChars.js"></script>
+      <button id="richText">Generic rich text</button>
+        <script src="richText.js"></script>
+      <button id="loremIpsum2Para">2 random paragraphs (no formatting)</button>
+        <script src="loremIpsum2Para.js"></script>
+      <button id="loremIpsum5Para">5 random paragraphs (no formatting)</button>
+        <script src="loremIpsum5Para.js"></script> 
+    </div>
   </body>
 </html>

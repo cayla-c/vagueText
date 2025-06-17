@@ -1,0 +1,4 @@
+document.getElementById("richText").addEventListener("click", () => {
+  const text = "This is your chance to copy some rich text!  I mean **RICH**. First, a list about why this is so great:\n - It's very useful to have on hand\n - You never know when you're going to need it, and you're:\n    - Generally not in the mood to make something up, or\n    - In a hurry.\n - It comes up more than you think.\n\n> Remember: this is a block quote.  It might or might not be supported in our displays?  A user would have to know their md on their own to try to add it in, so if it doesn't display right it's probably not a huge sin.\n\n1 .Here is a numbered list\n2 .Not numbers\n3 .Not weird characters\n4 .But there might be a [link](https://www.target.com)."
+  navigator.clipboard.writeText(text);
+});
