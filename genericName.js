@@ -1,6 +1,37 @@
-let firstNames = ["John", "Jane"];
+var firstNames = ["John", 
+  "Jane",
+  "Janice",
+  "Jackson",
+  "Jason",
+  "Jenny",
+  "Jermiah",
+  "Joseph", 
+  "Josue", 
+  "Joel",
+  "Jessica",
+  "Jennifer",
+  "Jazzmyn",
+  "Jerrica",
+  "Josephina",
+  "June",
+  "Sarah",
+  "Cayla",
+  "Shubham",
+  "Ahmet",
+  "Pavel",
+  "Dmitry",
+  "Sara",
+  "Dave",
+  "Ashraful",
+  "Daniel",
+  "Brandon",
+  "Caitlin",
+  "R.J.",
+  "David",
+  "Kodiak"
+];
 
-let lastNames = ["Smith",
+var lastNames = ["Smith",
   "Johnson",
   "Williams",
   "Brown",
@@ -99,13 +130,42 @@ let lastNames = ["Smith",
   "Long",
   "Ross",
   "Foster",
-  "Jimenez"]
+  "Jimenez",
+  "Cengiz",
+  "Gilbert",
+  "Eddy",
+  "Shayiq",
+  "Yansapov",
+  "Islam",
+  "Gorobets",
+  "Cardiff",
+  "Tendulkar",
+  "Chitransh",
+  "Navarro",
+  "Vasquez",
+  "Howell",
+  "Daily",
+  "Furr",
+  "Richardson"
+]
+
+  var userName = "Place Holder"
+  var userEmail = "place.holder@gmail.com"
 
   function genericNameGenerator() {
-    return firstNames[Math.floor(Math.random() * firstNames.length)] + " " + lastNames[Math.floor(Math.random() * lastNames.length)];
+    userName = firstNames[Math.floor(Math.random() * firstNames.length)] + " " + lastNames[Math.floor(Math.random() * lastNames.length)];
   }
   
+  function getNameEmail(userName) {
+    var nameArr = userName.split(' ');
+    var nameString = nameArr[0].concat(".").concat(nameArr[1]);
+    console.log(nameString);
+    userEmail = nameString.concat("@gmail.com");
+    console.log(userEmail);
+    return;
+  }
   document.getElementById("genericName").addEventListener("click", () => {
-    const text = genericNameGenerator();
-    navigator.clipboard.writeText(text);
-  });
+    genericNameGenerator();
+    navigator.clipboard.writeText(userName);
+    console.log(getNameEmail(userName))
+  })
